@@ -77,7 +77,6 @@ def log(x:float, guess:float, max_iter=1000, x_tol=1e-8) -> float:
 
 num = 10.25
 
-Completed
 # Outputs
 print(f"Sqrt({num}): \tPython = {math.sqrt(num)} \tMy Function = {sqrt(num, 0.5)} \t Relative difference = {abs(math.sqrt(num) - sqrt(num, 0.5))/math.sqrt(num)}")
 print(f"factorial({int(num)}): \tPython = {math.factorial(int(num))} \t\tMy Function = {factorial(int(num))} \t\t\t Relative difference = {abs(math.factorial(int(num)) - factorial(int(num)))/math.factorial(int(num))}")
