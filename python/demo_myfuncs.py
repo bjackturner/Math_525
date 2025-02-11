@@ -75,10 +75,10 @@ def log(x:float, guess:float, max_iter=1000, x_tol=1e-8) -> float:
     print(f"Unable to converge after {i} iterations")
     return guess
 
-num = 10.25
+num = 3.14159
 
 # Outputs
 print(f"Sqrt({num}): \tPython = {math.sqrt(num)} \tMy Function = {sqrt(num, 0.5)} \t Relative difference = {abs(math.sqrt(num) - sqrt(num, 0.5))/math.sqrt(num)}")
-print(f"factorial({int(num)}): \tPython = {math.factorial(int(num))} \t\tMy Function = {factorial(int(num))} \t\t\t Relative difference = {abs(math.factorial(int(num)) - factorial(int(num)))/math.factorial(int(num))}")
+print(f"factorial({int(num)}): \tPython = {math.factorial(int(num))} \t\t\tMy Function = {factorial(int(num))} \t\t\t Relative difference = {abs(math.factorial(int(num)) - factorial(int(num)))/math.factorial(int(num))}")
 print(f"exp({num}): \tPython = {math.exp(num)} \tMy Function = {exponential(num)} \t Relative difference = {abs(math.exp(num) - exponential(num))/math.exp(num)}")
 print(f"log({num}): \tPython = {math.log(num)} \tMy Function = {log(num, 0.5)} \t Relative difference = {abs(math.log(num) - log(num, 0.5))/math.log(num)}")
