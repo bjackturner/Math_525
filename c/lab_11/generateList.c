@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 #include "node.h"
 
 int GetNumberOfNodes() {
@@ -22,9 +23,9 @@ void GenerateList(node **head, const int num_nodes) {
 
     for (int i = 0; i < num_nodes; i++) {  
         temp = (node *)malloc(sizeof(node));  
-        temp->value = rand() % num_nodes;  
+        temp->value = (rand() % 2 == 0) ? ('A' + rand() % 26) : ('a' + rand() % 26);  
         temp->position = 0;  
-        printf("%4i", temp->value);  
+        printf("%c", temp->value);  
 
         if (*head == NULL) {  
             *head = temp;  

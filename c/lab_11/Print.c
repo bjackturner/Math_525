@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 #include "node.h"
 
 void Print(const int forward, const node* head) {
@@ -29,8 +29,8 @@ void Print(const int forward, const node* head) {
     printf(" ---------------------------------------------\n");
 }
 
-void PrintLine(const int pos, const int val, const node* head, const node* next) {
-    printf(" |%3i  |%3i  |%15p |%15p |\n", pos, val, (void*)head, (void*)next);
+void PrintLine(const int pos, const char val, const node* head, const node* next) {
+    printf(" |%3i  |%c  |%15p |%15p |\n", pos, val, (void*)head, (void*)next);
 }
 
 void PrintList(const node* head) {

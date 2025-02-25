@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int GetKey(){
-    int key;
+char GetKey(){
+    char key;
     printf ("\n Enter key to search : ");
-    scanf ("%i", &key);
+    scanf (" %c", &key);
     
     return key;
 }

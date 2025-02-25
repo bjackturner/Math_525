@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "node.h"
 
-void SearchList(const node* head, const int key) {
+void SearchList(const node* head, const char key) {
     if (head == NULL) {
         printf("Key not found in the list.\n");
         return;
