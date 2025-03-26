@@ -1,0 +1,2 @@
+With 1 threads, clock_time = 1.60998e+00 (sec)
+Total sum: 1855874.445560
