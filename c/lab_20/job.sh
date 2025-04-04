@@ -15,8 +15,8 @@ mkdir -p output
 cd $SLURM_SUBMIT_DIR  
 
 # Run the program and redirect both stdout and stderr to the output files in the output folder
-./main 1 10000000 > output/output1.txt 2>&1
-./main 2 10000000 > output/output2.txt 2>&1
-./main 4 10000000 > output/output4.txt 2>&1
-./main 8 10000000 > output/output8.txt 2>&1
-./main 16 10000000 > output/output16.txt 2>&1
+./main 1 1e-8 > output/output1.txt 2>&1
+./main 2 1e-8 > output/output2.txt 2>&1
+./main 4 1e-8 > output/output4.txt 2>&1
+./main 8 1e-8 > output/output8.txt 2>&1
+./main 16 1e-8 > output/output16.txt 2>&1
